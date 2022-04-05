@@ -34,7 +34,7 @@
 
     .example-box {
       margin-bottom: 50px;
-      /* box-shadow: 0 2px 5px rgba(0,0,0,.4); */
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .4);
       padding: 1em;
       border-radius: 12px;
       border: 1px solid #DFDFDF;
@@ -48,8 +48,13 @@
       align-items: center;
       background-image: linear-gradient(to bottom right, #2193b0, #6dd5ed);
       border: 3px solid #FFF;
-      border-radius: 10px;
+      border-radius: 30px;
       color: #FFF;
+      margin-left: 20px;
+      margin-right: 20px;
+    } 
+    .box-container {
+      border-radius: 30px;
     }
 
     .text-center {
@@ -64,22 +69,22 @@
     <!-- MULTIPLE ITEMS -->
     <div class="example-box">
       <div class="slider-multiple-items">
-        <div>
+        <div class="box-container">
           <!-- <div class="box">1</div> -->
-          <video autoplay muted defaultmuted loop class="box" src="img/video5.mp4"></video>
+          <video autoplay muted defaultmuted loop class="box box-1" src="img/video5.mp4"></video>
         </div>
-        <div>
+        <div class="box-container">
           <!-- <div class="box">2</div> -->
           <video autoplay muted defaultmuted loop class="box" src="img/video5.mp4"></video>
         </div>
-        <div>
+        <div class="box-container">
           <!-- <div class="box">3</div> -->
           <video autoplay muted defaultmuted loop class="box" src="img/video5.mp4"></video>
         </div>
-        <div>
+        <div class="box-container">
           <!-- <div class="box">4</div> -->
           <video autoplay muted defaultmuted loop class="box" src="img/video5.mp4"></video>
-        </div> 
+        </div>
       </div>
     </div>
   </div>
@@ -100,8 +105,8 @@
     var x = window.matchMedia("(max-width: 700px)")
     myFunction(x) // Call listener function at run time
     x.addListener(myFunction) // Attach listener function on state changes
- 
- 
+
+
 
   </script>
 </body>
